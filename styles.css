@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.door-frame {
+    width: 240px;
+    height: 520px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.door {
+    width: 220px;
+    height: 500px;
+    background: linear-gradient(135deg, #8B4513 25%, #A0522D 75%);
+    border-radius: 5px;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.door-panel {
+    width: 200px;
+    height: 140px;
+    background: linear-gradient(135deg, #A0522D 25%, #8B4513 75%);
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.door-panel.middle {
+    height: 160px;
+}
+
+.panel-detail {
+    width: 90%;
+    height: 30px;
+    background: linear-gradient(135deg, #8B4513 25%, #A0522D 75%);
+    border: 1px solid #8B4513;
+    border-radius: 3px;
+    margin: 5px auto;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.knob {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, gold 0%, #DAA520 70%);
+    border: 2px solid #DAA520;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 65px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.knob:before {
+    content: '';
+    width: 12px;
+    height: 4px;
+    background-color: #DAA520;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.knob:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #8B4513;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hinges {
+    position: absolute;
+    left: -10px;
+    top: 30px;
+}
+
+.hinge {
+    width: 10px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 3px;
+    margin: 30px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
